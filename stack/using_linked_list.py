@@ -40,6 +40,10 @@ class Stack:
 			self.list.head = self.list.head.next
 			return value
 
+	def delete(self):
+		self.list.head = None
+		return
+
 	def __str__(self):
 		return " <- ".join([str(node.value) for node in self.list])
 
@@ -49,8 +53,5 @@ stack.push(10)
 stack.push(15)
 stack.push('x')
 print(stack)
-# print(stack.peek())
-# print(stack.is_empty())
-# print(stack)
 print(stack.pop())
 print(stack)

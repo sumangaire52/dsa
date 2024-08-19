@@ -10,5 +10,9 @@ class Stack:
 	def is_empty(self):
 		return self.list == []
 
+	def delete(self):
+		self.list = []
+		return
+
 stack = Stack()
 print(stack.is_empty())
